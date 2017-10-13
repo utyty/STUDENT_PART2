@@ -10,7 +10,7 @@ import com.student_part1.Student;
 public class TestingDriver {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		int regNumber=1;
 		
 //		//testing variables
@@ -92,17 +92,12 @@ public class TestingDriver {
 		course1.add(mod5);
 		course1.add(mod6);
 		course1.add(mod7);
-				
-//		//adding modules to course 2  ----- conflit with course name
-//		course2.add(mod1);
-//		course2.add(mod2);
-//		course2.add(mod3);
-//		course2.add(mod4);
-//		course2.add(mod5);
-//		course2.add(mod6);
-//		course2.add(mod7);		
 		
 		
+		
+		System.out.printf( "%-15s%-12s%-12s%-12s\n\n" , "SURNAME", "NAME", "COURSE", " MODULE");
+		
+		//prinout students in the course
 		for ( Student std:course1.getStudentList()){
 			System.out.printf( "%-15s%-12s%-12s%-12s\n"  ,std.getSurname(),std.getFirstName(),std.getCourse(), std.getModulesNames());
 			
